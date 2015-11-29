@@ -1,0 +1,27 @@
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\bin\Release\SaveHero.exe.config
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\bin\Release\SaveHero.exe
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\bin\Release\SaveHero.pdb
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\bin\Release\SaveHero.Archive.dll
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\bin\Release\SaveHero.CfgParser.dll
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\bin\Release\SaveHero.Path.dll
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\bin\Release\SaveHero.Archive.pdb
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\bin\Release\SaveHero.CfgParser.pdb
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\bin\Release\SaveHero.Path.pdb
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\SaveHero.csprojResolveAssemblyReference.cache
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\ButtonDictionary.baml
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\ComboBoxDictionary.baml
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\CoreDictionary.baml
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\MainWindow.baml
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\TextBoxDictionary.baml
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\MainWindow.g.cs
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\App.g.cs
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\SaveHero_MarkupCompile.cache
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\SaveHero.g.resources
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\SaveHero.Properties.Resources.resources
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\SaveHero.csproj.GenerateResource.Cache
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\SaveHero.exe
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\obj\Release\SaveHero.pdb
+E:\Dropbox\Programming\C#\SaveHero\SaveHero\bin\Release\Profiles.ini
+E:\Google Drive\Programming\C#\SaveHero\SaveHero\bin\Release\SaveHero.exe.config
+E:\Google Drive\Programming\C#\SaveHero\SaveHero\obj\Release\SaveHero.exe
+E:\Google Drive\Programming\C#\SaveHero\SaveHero\obj\Release\SaveHero.pdb

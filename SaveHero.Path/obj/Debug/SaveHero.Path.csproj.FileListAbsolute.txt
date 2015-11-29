@@ -1,0 +1,5 @@
+E:\Dropbox\Programming\C#\SaveHero\SaveHero.Path\bin\Debug\SaveHero.Path.dll
+E:\Dropbox\Programming\C#\SaveHero\SaveHero.Path\bin\Debug\SaveHero.Path.pdb
+E:\Dropbox\Programming\C#\SaveHero\SaveHero.Path\obj\Debug\SaveHero.Path.dll
+E:\Dropbox\Programming\C#\SaveHero\SaveHero.Path\obj\Debug\SaveHero.Path.pdb
+E:\Dropbox\Programming\C#\SaveHero\SaveHero.Path\obj\Debug\SaveHero.Path.csprojResolveAssemblyReference.cache

@@ -1,0 +1,130 @@
+﻿<Window x:Class="SaveHero.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Save Hero" Height="560" Width="640"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="CoreDictionary.xaml" />
+                <ResourceDictionary Source="ButtonDictionary.xaml" />
+                <ResourceDictionary Source="TextBoxDictionary.xaml" />
+                <ResourceDictionary Source="ComboBoxDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary> 
+    </Window.Resources>
+    <Border Margin="10" BorderThickness="0">
+        <Border.Effect>
+            <DropShadowEffect Color="Black" Opacity="0.85" Direction="270" BlurRadius="10" ShadowDepth="1" />
+        </Border.Effect>
+        <DockPanel>
+            <Grid x:Name="StatusBar" DockPanel.Dock="Top" Background="DimGray">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="3" />
+                    <ColumnDefinition Width="20"></ColumnDefinition>
+                    <ColumnDefinition Width="10"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_Minimize" Style="{StaticResource ButtonStatusBar}" Content="−" Grid.Column="1" Click="OnClickMinimize" />
+                <Button x:Name="btn_Close" Style="{StaticResource ButtonStatusBar}" Content="✕" Grid.Column="3"  Click="OnClickExit" />
+            </Grid>
+            <Grid DockPanel.Dock="Top" Background="WhiteSmoke">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="40" />
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="1" Grid.Row="1" Source="header.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
+            </Grid>
+            <Grid DockPanel.Dock="Bottom" Background="LightGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="10" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="1" Grid.Row="1" Style="{StaticResource LabelFooter}" Content="Version 0.0.1 alpha"></Label>
+                <Label Grid.Column="3" Grid.Row="1" Style="{StaticResource LabelFooter}" Content="Created by Matthew Northcott" HorizontalAlignment="Right"></Label>
+            </Grid>
+            <Grid DockPanel.Dock="Bottom" Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="23" />
+                    <RowDefinition Height="10" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="1" Grid.Row="1" Style="{StaticResource ButtonStandard}" Content="Archive" Click="PerformBackup" />
+                <Label x:Name="LabelStatus" Grid.Column="1" Grid.Row="3" Style="{StaticResource LabelStandard}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource SaveheroLightGreenBrush}" Content="Ready!" />
+            </Grid>
+            <Grid Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="10" />
+                </Grid.ColumnDefinitions>
+
+                <ComboBox x:Name="ComboBoxProfile" 
+                          Grid.Column="1"
+                          Grid.Row="1" 
+                          HorizontalAlignment="Stretch"
+                          BorderBrush="LightGray"
+                          SelectionChanged="ComboBoxProfileChanged"
+                          Style="{StaticResource ComboboxStandard}" />
+                <Button x:Name="ButtonOpenCfg" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3" Style="{StaticResource ButtonStandard}" Content="Open Configuration" Click="OpenConfig"/>
+                <Label Grid.Column="1" Grid.Row="2" Style="{StaticResource LabelTextDesc}" Content="PROFILE" />
+
+                <TextBox x:Name="TextBoxSource" Grid.Column="1" Grid.Row="4" Style="{StaticResource TextBoxStandard}"  TextChanged="OnTextBoxChange" />
+                <Button x:Name="ButtonSourceBrowse" Grid.Column="3" Grid.Row="4" Style="{StaticResource ButtonStandard}" Content="Browse..." Click="BrowseForDir"/>
+                <Button x:Name="ButtonSourceOpen" Grid.Column="5" Grid.Row="4" Style="{StaticResource ButtonStandard}" Content="Open Location" Click="OpenDir" />
+                <Label Grid.Column="1" Grid.Row="5" Style="{StaticResource LabelTextDesc}" Content="SOURCE DIRECTORY" />
+
+                <TextBox x:Name="TextBoxDestination" Grid.Column="1" Grid.Row="7" Style="{StaticResource TextBoxStandard}" TextChanged="OnTextBoxChange" />
+                <Button x:Name="ButtonDestinationBrowse" Grid.Column="3" Grid.Row="7" Style="{StaticResource ButtonStandard}" Content="Browse..." Click="BrowseForDir" />
+                <Button x:Name="ButtonDestinationOpen" Grid.Column="5" Grid.Row="7" Style="{StaticResource ButtonStandard}" Content="Open Location" Click="OpenDir" />
+                <Label Grid.Column="1" Grid.Row="8" Style="{StaticResource LabelTextDesc}" Content="DESTINATION DIRECTORY" />
+
+                <TextBox x:Name="TextBoxArchiveName" Grid.Column="1" Grid.Row="10" Style="{StaticResource TextBoxStandard}" TextChanged="OnTextBoxChange" />
+                <CheckBox x:Name="CheckBoxIncludeDateTime" Grid.Column="3" Grid.Row="10" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Label Grid.Column="5" Grid.Row="10" Style="{StaticResource LabelStandard}" VerticalAlignment="Center" Content="Include Date" />
+                <Label Grid.Column="1" Grid.Row="11" Style="{StaticResource LabelTextDesc}" Content="ARCHIVE NAME" />
+            </Grid>
+        </DockPanel>
+    </Border>
+</Window>

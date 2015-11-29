@@ -1,0 +1,5 @@
+E:\Dropbox\Programming\C#\SaveHero\SaveHero.CfgParser\bin\Debug\SaveHero.CfgParser.dll
+E:\Dropbox\Programming\C#\SaveHero\SaveHero.CfgParser\bin\Debug\SaveHero.CfgParser.pdb
+E:\Dropbox\Programming\C#\SaveHero\SaveHero.CfgParser\obj\Debug\SaveHero.CfgParser.csprojResolveAssemblyReference.cache
+E:\Dropbox\Programming\C#\SaveHero\SaveHero.CfgParser\obj\Debug\SaveHero.CfgParser.dll
+E:\Dropbox\Programming\C#\SaveHero\SaveHero.CfgParser\obj\Debug\SaveHero.CfgParser.pdb

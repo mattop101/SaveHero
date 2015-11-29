@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <FontFamily x:Key="DefaultFont">Century Gothic</FontFamily>
+
+    <Color x:Key="SaveheroGreen">#184d20</Color>
+    <Color x:Key="SaveheroLightGreen">#2b913b</Color>
+    <Color x:Key="SaveheroPaleGreen">#c9e3cd</Color>
+    <Color x:Key="SaveheroErrorRed">#912b2b</Color>
+    
+    <SolidColorBrush x:Key="SaveheroGreenBrush" Color="{StaticResource SaveheroGreen}" />
+    <SolidColorBrush x:Key="SaveheroLightGreenBrush" Color="{StaticResource SaveheroLightGreen}" />
+    <SolidColorBrush x:Key="SaveheroPaleGreenBrush" Color="{StaticResource SaveheroPaleGreen}" />
+    <SolidColorBrush x:Key="SaveheroErrorRedBrush" Color="{StaticResource SaveheroErrorRed}" />
+    
+    <Style x:Key="LabelStandard" TargetType="{x:Type Label}">
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFont}" />
+        <Setter Property="FontSize" Value="11" />
+        <Setter Property="Foreground" Value="Black" />
+    </Style>
+    
+    <Style x:Key="LabelTextDesc" TargetType="{x:Type Label}">
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFont}" />
+        <Setter Property="FontSize" Value="10" />
+        <Setter Property="Foreground" Value="{StaticResource SaveheroGreenBrush}" />
+    </Style>
+    
+    <Style x:Key="LabelFooter" TargetType="{x:Type Label}">
+        <Setter Property="FontFamily" Value="{StaticResource DefaultFont}" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="Foreground" Value="DimGray" />
+    </Style>
+
+    
+
+</ResourceDictionary>
